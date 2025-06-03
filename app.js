@@ -40,7 +40,7 @@ const fromDollarToYen = (dolares) => {
     const  JPY = 156.5; 
     const DOLLARTOEURO = dolares / DolarValueToEuro; 
     
-    return DOLLARTOEURO * JPY; 
+    return Math.round(DOLLARTOEURO * JPY); 
 }
 
 const fromEuroToDollar = (euros) => {
@@ -52,7 +52,7 @@ const fromYenToPound = (yenes) => {
     const YenToEuroValue = 156.5; 
     const fromEuroToYen = yenes / YenToEuroValue; 
     const GBP = 0.87; 
-    return fromEuroToYen * GBP
+    return Math.round(fromEuroToYen * GBP)
 }
 
 
